@@ -1,0 +1,39 @@
+.container{
+    width: 450px;
+    height: 500px;
+    background-image: url(./background.jpg);
+    box-shadow:black;
+    margin-left:32%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+.box{
+    margin-left: 10%;
+    padding-top: 20px;
+}
+.box1{
+    padding-bottom: 20px;
+}
+.box2{
+    width: 350px;
+    padding-top: 2%;
+}
+.box3{
+    font-size:large ;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.863);
+}
+.btn{
+    margin-left: 27%;
+    padding: 7px 40px;
+    background-color: rgb(208, 205, 201);
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: rgb(166, 187, 187);
+}
+h2{
+    margin-left: 30%;
+    padding-top: 20px;
+    font-style:italic;
+}

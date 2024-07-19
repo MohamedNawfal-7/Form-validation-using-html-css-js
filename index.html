@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Details Form</h2>
+        <form name="hello" class="box" action="submit.html" method="post" onsubmit="return nawfal() ">
+        <div class="box1">
+            <label class="box3" for="">Firstname</label><br>
+            <input class="box2" type="text" name="fname">
+        </div>
+        <div class="box1">
+            <label class="box3" for="">Lastname</label><br>
+            <input class="box2" type="text" name="lname">
+        </div>
+        <div class="box1">
+            <label class="box3" for="">City</label><br>
+            <input class="box2" type="text" name="city">
+        </div>
+        <div class="box1">
+            <label class="box3" for="">phone</label><br>
+            <input class="box2" type="tel" name="phone">
+        </div>
+        <div class="box1">
+            <label class="box3" for="">Address</label><br>
+            <textarea class="box2" name="add" id=""></textarea>
+        </div>
+        <button class="btn">Submit</button>
+        </form>
+    </div>
+    <script>
+        function nawfal(){
+
+            var one=document.hello.fname.value;
+            var two=document.hello.lname.value;
+            var three=document.hello.city.value;
+            var four=document.hello.phone.value;
+            var five=document.hello.add.value;
+
+            if(one==null||one=="")
+            {
+                alert("Please Enter your Firstname");
+                return false;
+            }
+            else if(two==null||two=="")
+            {
+                alert("Please Enter your Lastname");
+                return false;
+            }
+            else if(three==null||three=="")
+            {
+                alert("Please Enter your city");
+                return false;
+            }
+            else if(four=="")
+            {
+                alert("Please Enter your phoneno");
+                return false;
+            }
+            else if(four.length>10)
+            {
+                alert("Invalid phone no");
+                return false;
+            }
+            else if(four.length<10)
+            {
+                alert("Invalid Phone no")
+                return false;
+            }
+            else if(five==null||five=="")
+            {
+                alert("Please Enter your address")
+                return false;
+            }
+            return true;
+
+
+        }
+    </script>
+</body>
+</html>
